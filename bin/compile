@@ -52,7 +52,6 @@ export MAVEN_OPTS="-Xmx1024m ${MAVEN_JAVA_OPTS} -Duser.home=$BUILD_DIR -Dmaven.r
 for DIR in ".m2" ".maven" ; do
   cp -r $CACHE_DIR/$DIR $BUILD_DIR/$DIR
 done
-PATH=/app/.maven/bin:$PATH
 
 # build app
 mvnOpts="-B"
